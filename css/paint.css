@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #fff;
+}
+
+canvas {
+    display: block;
+    /* margin: 0 auto; */
+	border: 1px solid #333;
+	cursor: pointer;
+	background-color: black;
+}
+
+.tools {
+	background-color: steelblue;
+	display: flex;
+    align-items: center;
+}
+
+.tools > * {
+	background-color: #fff;
+	border: none;
+	font-size: 25px;
+	height: 40px;
+	width: 40px;
+    padding: 5px;
+	margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+}
+
+#save {
+    font-size: 16px;
+	margin-left: auto;
+    text-decoration: none;
+}
+
+.title{
+	font-weight: bold;
+	font-size: 32px;
+	color: red;
+	animation: change infinite .65s alternate;
+}
+
+.color-b{
+	background-color: black;
+	width: 100%;
+	height: 150px;
+	border: 2px solid wheat;
+
+}
+
+.color-w{
+	background-color: white;
+	width: 100%;
+	height: 150px;
+	border: 2px solid black;
+}
+
+.color-grey{
+	background-color: grey;
+	width: 100%;
+	height: 150px;
+	border: 2px solid grey;
+}
+
+.color-pink {
+	background-color: rgb(238, 127, 223);
+	width: 100%;
+	height: 150px;
+	border: 2px solid rgb(238, 127, 223);
+}
+
+.upload{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0; 
+	width: 100%;
+	background-color: rgba(67, 68, 67, 0.5);
+	z-index: 1000;
+	height: 100vh;
+	display: none;
+}
+
+.inputBox{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	transform: translate(-50%,-50%);
+	background-color: rgb(79, 233, 182);
+	height: 400px;
+	z-index: 9999;
+	border-radius: 12px;
+}
+
+.closeModal{
+	color: rgb(241, 229, 229);
+	cursor: pointer;
+	/* border: none; */
+	position: absolute;
+	left: 40%;
+	top: 90%;
+	transform: translate(-50%,-50%);
+	font-size: 36px;
+	background-color: rgb(231, 18, 18);
+	width: 70px;
+	border-radius: 8px;
+}
+
+.submitForm{
+	color: rgb(241, 232, 232);
+	cursor: pointer;
+	/* border: none; */
+	position: absolute;
+	left: 60%;
+	top: 90%;
+	transform: translate(-50%,-50%);
+	font-size: 36px;
+	background-color: rgb(20, 235, 20);
+	width: 70px;
+	border-radius: 8px;
+}
+
+.uploadImg{
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	margin: auto;
+	margin-left: 100px;
+}
+
+.on{
+	display: block;
+}
+
+
+@keyframes change{
+	from{
+		
+		color: rgb(245, 11, 11);
+	}
+	50%{
+		color: green;
+	}
+	to{
+		
+		color: rgb(139, 139, 12);
+	}
+}
