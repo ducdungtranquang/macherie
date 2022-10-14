@@ -5,7 +5,11 @@
 }
 
 body {
-	background-color: #fff;
+	background-color: rgb(32, 197, 192);
+}
+
+.body{
+	background-color: rgb(205, 240, 185);
 }
 
 canvas {
